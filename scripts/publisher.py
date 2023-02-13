@@ -62,7 +62,7 @@ def publisher():
 
 		# edit: the logic in the original version can't actually publish the raw data
 		# we slightly change the if else statement so now
-		# do_log_raw_data is true: publish the raw data to /dvl/json_data topic, fill in theDVL using velocity data and publish to dvl/data topic
+		# do_log_raw_data is false: publish the raw data to /dvl/json_data topic, fill in theDVL using velocity data and publish to dvl/data topic
 		# do_log_raw_data is true: only fill in theDVL using velocity data and publish to dvl/data topic
 
 		if do_log_raw_data:
